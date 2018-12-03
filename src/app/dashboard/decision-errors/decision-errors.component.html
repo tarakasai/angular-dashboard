@@ -1,0 +1,100 @@
+<div class="signal-error-container mat-elevation-z3">
+  <div class="title" (click)="moreInfo()">
+    WIQ: Decision Errors
+    <div class="icon-container" [ngClass]="{'rotate-icon': !toggleSignal}">
+      <fa-icon [icon]="faChevronDown"></fa-icon>
+    </div>
+  </div>
+  <div class="toggle-container" [ngClass]="{'height-0': toggleSignal }">
+    <div class="info-status-legend">
+      <div class="info" [ngClass]="{'active': activeLink === 'info' }">
+        <button mat-raised-button (click)="activeState('info')">Info</button>
+      </div>
+      <div class="status" [ngClass]="{'active': activeLink === 'status' }">
+        <button mat-raised-button (click)="activeState('status')">Status</button>
+      </div>
+      <div class="legend"
+           [ngClass]="{'active': activeLink === 'legend' }" >
+        <button mat-raised-button>Legend</button>
+      </div>
+    </div>
+    <div class="toggle-content">
+      <div class="info-content" *ngIf="activeLink === 'info'">
+        Something about Info
+      </div>
+      <div class="status-content" *ngIf="activeLink === 'status'">
+        <div class="no-alert">No Alert</div>
+        <div class="suppressed">Suppressed</div>
+        <div class="status-active">Active</div>
+      </div>
+      <div class="legend-content" *ngIf="activeLink === 'legend'">
+        Something about Legend
+      </div>
+    </div>
+  </div>
+  <div class="signal-error-table">
+    <table mat-table [dataSource]="dataSource" matSort>
+
+      <!-- Checkbox Column -->
+      <ng-container matColumnDef="select">
+        <th mat-header-cell *matHeaderCellDef style="display: none;">
+          <mat-checkbox (change)="$event ? masterToggle() : null"
+                        [checked]="selection.hasValue() && isAllSelected()"
+                        [indeterminate]="selection.hasValue() && !isAllSelected()">
+          </mat-checkbox>
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <!--<mat-checkbox (click)="$event.stopPropagation()"-->
+                        <!--[disableRipple]="disableRippleBool"-->
+                        <!--(change)="$event ? selection.toggle(row) : null"-->
+                        <!--[checked]="selection.isSelected(row)">-->
+          <!--</mat-checkbox>-->
+          <div class="fontIcon" (click)="openSuppressModal(row)">
+            <img src="../../../assets/images/svg/stopIcon.png" alt="stop">
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- Position Column -->
+      <!--<ng-container matColumnDef="position">-->
+      <!--<th mat-header-cell *matHeaderCellDef mat-sort-header style="display: none;"> No.</th>-->
+      <!--<td mat-cell *matCellDef="let element"> {{element.position}}</td>-->
+      <!--</ng-container>-->
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header style="display: none;"> Name</th>
+        <td mat-cell *matCellDef="let element"> {{element.name}}</td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header style="display: none;"> Weight</th>
+        <td mat-cell *matCellDef="let element">
+          <div class="outer-container">
+            <div class="inner-container"
+                 [style.width]="element.symbol+'%'">
+            </div>
+            <div class="text-container">{{element.weight.min}}/{{element.weight.max}}</div>
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header style="display: none;"> Symbol</th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}}%</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+          (click)="selection.toggle(row)">
+      </tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+    <!--<div class="suppress-button">-->
+      <!--<button mat-flat-button class="more-btn">More Details</button>-->
+      <!--<button mat-raised-button class="suppress-btn">Suppress</button>-->
+    <!--</div>-->
+  </div>
+</div>

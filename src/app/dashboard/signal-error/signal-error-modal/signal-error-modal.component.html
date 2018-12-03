@@ -1,0 +1,26 @@
+<div class="toggle-container" [ngClass]="{'height-0': toggleSignal }">
+  <div class="info-status-legend">
+    <div class="info" [ngClass]="{'active': activeLink === 'info' }">
+      <button mat-raised-button (click)="activeState('info')">Info</button>
+    </div>
+    <div class="status" [ngClass]="{'active': activeLink === 'status' }">
+      <button mat-raised-button (click)="activeState('status')">Status</button>
+    </div>
+    <div class="legend" [ngClass]="{'active': activeLink === 'legend' }">
+      <button mat-raised-button (click)="activeState('legend')">Legend</button>
+    </div>
+  </div>
+  <div class="toggle-content">
+    <div class="info-content" *ngIf="activeLink === 'info'">
+      Something about Info
+    </div>
+    <div class="status-content" *ngIf="activeLink === 'status'">
+      <div class="no-alert">No Alert</div>
+      <div class="suppressed">Suppressed</div>
+      <div class="status-active">Active</div>
+    </div>
+    <div class="legend-content" *ngIf="activeLink === 'legend'">
+      Something about Legend
+    </div>
+  </div>
+</div>

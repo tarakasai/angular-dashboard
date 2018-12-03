@@ -1,0 +1,40 @@
+<div class="air-date-details-container">
+  <cc-sidebar></cc-sidebar>
+  <div class="main-container">
+    <cc-navbar></cc-navbar>
+    <div class="title-view-container">
+      <div class="title-container">
+        Working Issues Queue
+      </div>
+      <div class="view-container">
+        <div class="title">Select a view</div>
+        <button mat-raised-button
+                (click)="changeState('alerts')"
+                [ngClass]="{'activeStateClass': activeState === 'alerts'}">
+          WIQ Alerts
+        </button>
+        <button mat-raised-button
+                (click)="changeState('errors')"
+                [ngClass]="{'activeStateClass': activeState === 'errors'}">
+          WIQ Errors
+        </button>
+        <button mat-raised-button
+                (click)="changeState('failure')"
+                [ngClass]="{'activeStateClass': activeState === 'failure'}">
+          WIQ Failure Rate
+        </button>
+      </div>
+    </div>
+    <div class="wiq-outlet">
+      <div *ngIf="activeState === 'alerts'">
+        <cc-alerts></cc-alerts>
+      </div>
+      <div *ngIf="activeState === 'errors'">
+        <cc-errors></cc-errors>
+      </div>
+      <div *ngIf="activeState === 'failure'">
+        <cc-failure></cc-failure>
+      </div>
+    </div>
+  </div>
+</div>

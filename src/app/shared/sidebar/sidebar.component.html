@@ -1,0 +1,57 @@
+<div class="sidebar-container">
+  <!-- <div class="sidebar-title">Command Center</div> -->
+  <div class="sidebar-title">
+    <img class="homeIcon" src="../../assets/images/nav/home_icon.png" alt="loginImg">
+  </div>
+  <hr>
+  <ul>
+    <li routerLink="/dashboard" routerLinkActive="activeLink">
+      <div class="fontIcon">
+        <fa-icon [icon]="faChartLine"></fa-icon>
+      </div>
+      <div class="li-content">High Level Dashboard</div>
+    </li>
+    <li routerLink="/air-date-details" routerLinkActive="activeLink">
+      <div class="fontIcon">
+        <fa-icon [icon]="faCalendarAlt"></fa-icon>
+      </div>
+      <div class="li-content">Schedule Monitor</div>
+    </li>
+    <li routerLink="/signal-monitor" routerLinkActive="activeLink">
+      <div class="fontIcon">
+        <fa-icon [icon]="faSignal"></fa-icon>
+      </div>
+      <div class="li-content">Signal Monitor</div>
+    </li>
+    <li>
+      <div class="fontIcon">
+        <fa-icon [icon]="faThumbsUp"></fa-icon>
+      </div>
+      <div class="li-content">Confidence Monitor</div>
+    </li>
+    <li routerLink="/working-issue-queue" routerLinkActive="activeLink">
+      <div class="fontIcon">
+        <fa-icon [icon]="faBriefcase"></fa-icon>
+      </div>
+      <div class="li-content">Working Issues Queue</div>
+    </li>
+    <li routerLink="/playout-search" routerLinkActive="activeLink">
+      <div class="fontIcon">
+        <fa-icon [icon]="faSearch"></fa-icon>
+      </div>
+      <div class="li-content">Playout Search</div>
+    </li>
+    <li>
+      <div class="fontIcon">
+        <fa-icon [icon]="faChartBar"></fa-icon>
+      </div>
+      <div class="li-content">Reports</div>
+    </li>
+    <li>
+      <div class="fontIcon">
+        <fa-icon [icon]="faCog"></fa-icon>
+      </div>
+      <div class="li-content">Administration</div>
+    </li>
+  </ul>
+</div>

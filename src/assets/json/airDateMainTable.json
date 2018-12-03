@@ -1,0 +1,586 @@
+[{
+	"market_code": "Portland",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Minneapolis-St. Paul",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Philadelphia",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Charlottesville",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Wheeling",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Houston",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Rockford",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Denver",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Fort Meyers-Naples",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Detroit",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Panama City",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Tupelo",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Knoxville",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Lansing",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Fresno",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Johnstown-Altoona",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Jacksonville",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Indianapolis",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Salt Lake City",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Chattanooga",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Hartford",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Little Rock",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Savannah",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Washington",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Nashville",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Monroe",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Baltimore",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Louisville",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Hattiesburg-Laurel",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Harrisonburg",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Atlanta",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Sacramento",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Colorado Springs",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Peoria",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "HLLY",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Seattle",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "El Paso",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Champaign",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Springfield",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Meridian",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Charleston",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Salisbury",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Pittsburgh",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Tallahassee",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Richmond",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Flint",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Jackson",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Toledo",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Youngstown",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "South Bend",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Chicago",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Boston",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Augusta",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Grand Rapids",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Roanoke",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Memphis",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "San Francisco",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Wilkes-Barre",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Spokane",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "West Palm Beach",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Burlington",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Lafayette",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Albuquerque",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Miami",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}, {
+	"market_code": "Ft. Wayne",
+	"total_status": 0,
+	"spot_trans_status": 0,
+	"spot_trans_status_color": "GREEN",
+	"clover_ads_status": 0,
+	"clover_ads_status_color": "GREEN",
+	"mip_status": 0,
+	"mip_status_color": "GREEN"
+}]

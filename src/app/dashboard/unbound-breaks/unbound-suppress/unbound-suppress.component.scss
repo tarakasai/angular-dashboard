@@ -1,0 +1,25 @@
+.unbound-suppress-container {
+  .title {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .content {
+    color: #777777;
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: 300;
+    margin-bottom: 20px;
+    span {
+      font-weight: 500;
+      color: #555555;
+      font-size: 14px;
+    }
+  }
+  .suppress-actions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}

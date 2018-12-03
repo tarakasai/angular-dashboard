@@ -1,0 +1,24 @@
+<div class="navbar-container">
+  <div class="select-container">
+    <mat-form-field>
+      <mat-select placeholder="Choose Production" [value]="selectedOption">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="empty"></div>
+  <div class="info-container">
+    <div class="name-container">
+      <div class="title">Welcome ,</div>
+      <div class="value">sri sainath kodavanti</div>
+    </div>
+    <div class="logout-container">
+      <div class="fontIcon">
+        <fa-icon [icon]="faSignOutAlt"></fa-icon>
+      </div>
+      Sign out
+    </div>
+  </div>
+</div>

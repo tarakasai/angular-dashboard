@@ -1,0 +1,28 @@
+<div class="playout-table-container" *ngIf="tableData">
+  <div class="search-container">
+    <div class="fontIcon">
+      <fa-icon [icon]="faSearch"></fa-icon>
+    </div>
+    <input type="text" (keyup)="applyFilter($event.target.value)"
+           placeholder="Search for corresponding spot UUID or spot ID or aseest ID">
+  </div>
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+      <ng-container *ngFor="let each of displayedColumns" matColumnDef={{each}}>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>{{displayHeaders[each]}}</th>
+        <td mat-cell *matCellDef="let row"> {{row[each]}}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      </tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+</div>
+
+<div class="playout-table-container" *ngIf="!tableData">
+  <div class="select-default-text mat-elevation-z1">
+    Please select all the selectors and apply the search to see the results.
+  </div>
+</div>

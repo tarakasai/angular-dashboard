@@ -1,0 +1,74 @@
+@import '../../../src/theme';
+
+.air-date-details-container {
+  display: flex;
+  .main-container {
+    width: calc(100vw - 64px);
+    position: relative;
+    left: 64px;
+    .add-title {
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title-container {
+        .main {
+          font-size: 20px;
+          color: $main-color;
+          font-weight: 400;
+        }
+        .last-updated {
+          font-size: 12px;
+          font-weight: 300;
+          color: #555;
+          margin: 10px 0 4px 0;
+          span {
+            font-weight: 500;
+            font-size: 14px;
+            color: #333;
+            margin-left: 6px;
+          }
+        }
+        .air-date {
+          margin-top: 4px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #555;
+          span {
+            font-size: 12px;
+            font-weight: 300;
+            color: #555;
+            margin: 10px 0 4px 0;
+            .date {
+              font-weight: 500;
+              font-size: 14px;
+              color: #333;
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+      .date-change-export {
+        display: flex;
+        align-items: center;
+        .date-change-container {
+          width: 180px;
+          height: 50px;
+        }
+        .export-button {
+          margin: 0 16px 0 20px;
+          button {
+            background: $main-third-color;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .main-table {
+      margin: 15px;
+      height: calc(100vh - 206px);
+      overflow-y: scroll;
+      padding: 15px;
+    }
+  }
+}

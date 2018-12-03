@@ -1,0 +1,35 @@
+<div class="sm-table-container">
+  <div class="search-container">
+    <div class="fontIcon">
+      <!--<fa-icon [icon]="faSearch"></fa-icon>-->
+    </div>
+    <input type="text" (keyup)="applyFilter($event.target.value)" placeholder="Search for corresponding date">
+  </div>
+  <div class="table-container">
+    <div class="table-header">
+      <div class="stream">Stream</div>
+      <div class="signal-health">Signal Health</div>
+    </div>
+    <div class="table-body">
+      <div class="each-row" *ngFor="let eachData of signalMonitorData.data">
+        <div class="stream-signal-health">
+          <div class="stream-body">
+            <div class="stream-name">{{eachData['stream_name']}}</div>
+            <div class="data-center-1">{{eachData['data_centers'][0]}}</div>
+            <div class="data-center-2">{{eachData['data_centers'][1]}}</div>
+          </div>
+          <div class="signal-health-body">
+            <div class="each-sm-body" *ngFor="let each of eachData['epoch_details']">
+              <div class="time-stamps">{{each['sig_epoch']}}</div>
+              <div class="data-center-1-data">{{each['signal_details'][0]}}</div>
+              <div class="data-center-2-data">{{each['signal_details'][1]}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="total-breaks">
+          Total Breaks: <span>{{eachData['total_signal_count']}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

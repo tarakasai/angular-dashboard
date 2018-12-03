@@ -1,0 +1,62 @@
+<div class="playout-search-container">
+  <cc-sidebar></cc-sidebar>
+  <div class="main-container">
+    <cc-navbar></cc-navbar>
+    <div class="add-title">
+      <div class="title-container">
+        <div class="main">Playout Search</div>
+      </div>
+    </div>
+    <div class="selector-container mat-elevation-z1">
+      <div class="air-select">
+        <mat-form-field>
+          <mat-select placeholder="Air Date" [(value)]="dateSelected">
+            <mat-option *ngFor="let date of airDate" [value]="date.value">
+              {{date.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="market-select">
+        <mat-form-field>
+          <mat-select placeholder="Market" [(value)]="marketSelected">
+            <mat-option *ngFor="let market of markets" [value]="market.value">
+              {{market.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="syscode-select">
+        <mat-form-field>
+          <mat-select placeholder="Syscode" [(value)]="syscodeSelected">
+            <mat-option *ngFor="let syscode of syscodes" [value]="syscode.value">
+              {{syscode.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="network-select">
+        <mat-form-field>
+          <mat-select placeholder="Network" [(value)]="networkSelected">
+            <mat-option *ngFor="let network of networks" [value]="network.value">
+              {{network.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="flex-grow"></div>
+      <div class="search-button">
+        <button mat-raised-button (click)="fetchPlayoutSearch()">
+          <span>Search</span> <fa-icon [icon]="faSearch"></fa-icon>
+        </button>
+      </div>
+      <div class="export-button">
+        <button mat-raised-button>
+          <span>Export</span><fa-icon [icon]="faDownload"></fa-icon></button>
+      </div>
+    </div>
+    <div class="playout-display-container">
+      <cc-playout-table [tableData]="playoutSearchData"></cc-playout-table>
+    </div>
+  </div>
+</div>

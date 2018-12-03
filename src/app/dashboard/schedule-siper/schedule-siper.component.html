@@ -1,0 +1,24 @@
+<div class="schedule-container mat-elevation-z3">
+  <div class="title">Schedule & SIPER Status123</div>
+  <div class="value">
+    <div class="dates-container">
+      <div class="dates-title">Schedule Status</div>
+      <div class="dates-value">
+        <div class="each-date" *ngFor="let eachDate of schedulesByDate"
+             [ngStyle]="{'background-image': eachDate.color}">
+          {{eachDate.air_date}}
+        </div>
+      </div>
+    </div>
+    <div class="status-container">
+      <div class="status-title">SIPER Status
+        <span>- Under Construction</span>
+      </div>
+      <div class="status-value">
+        <button mat-stroked-button>Ashburn</button>
+        <button mat-stroked-button>Chicago</button>
+        <button mat-stroked-button>Hillsboro</button>
+      </div>
+    </div>
+  </div>
+</div>

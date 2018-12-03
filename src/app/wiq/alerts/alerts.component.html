@@ -1,0 +1,36 @@
+<div class="search-container">
+  <div class="fontIcon">
+    <fa-icon [icon]="faSearch"></fa-icon>
+  </div>
+  <input type="text" (keyup)="applyFilter($event.target.value)" placeholder="Search for corresponding failure rate" >
+</div>
+
+<div class="mat-elevation-z8" *ngIf="!alertsTableData.loading">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-checkbox (change)="$event ? masterToggle() : null"
+                      [checked]="selection.hasValue() && isAllSelected()"
+                      [indeterminate]="selection.hasValue() && !isAllSelected()">
+        </mat-checkbox>
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox (click)="$event.stopPropagation()"
+                      [disableRipple]="disableRippleBool"
+                      (change)="$event ? selection.toggle(row) : null"
+                      [checked]="selection.isSelected(row)">
+        </mat-checkbox>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of displayedColumns.slice(1)">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{tableHeader[column]}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[column]}}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+        (click)="selection.toggle(row)">
+    </tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+</div>

@@ -1,0 +1,26 @@
+<div class="signal-monitor-container">
+  <cc-sidebar></cc-sidebar>
+  <div class="main-container">
+    <cc-navbar></cc-navbar>
+    <div class="add-title">
+      <div class="title-container">
+        <div class="main">Signal Monitor</div>
+        <div class="last-updated">Last Updated: <span>2018-11-07 21:58:19</span></div>
+      </div>
+      <div class="export-button">
+        <button mat-raised-button>Export All</button>
+      </div>
+    </div>
+    <div class="details-container mat-elevation-z2">
+      <div class="detail-suppress">
+        <div class="detail">Detail View</div>
+        <div class="suppress">
+          <button mat-raised-button>Suppress</button>
+        </div>
+      </div>
+      <div class="sm-table">
+        <cc-sm-table [signalMonitorData]="signalMonitorData"></cc-sm-table>
+      </div>
+    </div>
+  </div>
+</div>
