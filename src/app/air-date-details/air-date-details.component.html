@@ -1,0 +1,34 @@
+<div class="air-date-details-container">
+  <cc-sidebar></cc-sidebar>
+  <div class="main-container">
+    <cc-navbar></cc-navbar>
+    <div class="add-title">
+      <div class="title-container">
+        <div class="main">Air Date Details</div>
+        <div class="last-updated">Last Updated: <span>2018-11-07 21:58:19</span></div>
+        <div class="air-date">
+          Schedule Monitor
+          <span>Air Date: <span class="date">2018-11-08</span></span>
+        </div>
+      </div>
+      <div class="date-change-export">
+        <div class="date-change-container">
+          <mat-form-field>
+            <mat-select placeholder="Change Date" [(value)]="selected">
+              <mat-option value="option1">2018-11-07</mat-option>
+              <mat-option value="option2">2018-11-08</mat-option>
+              <mat-option value="option3">2018-11-09</mat-option>
+              <mat-option value="option4">2018-11-10</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="export-button">
+          <button mat-raised-button>Export Errors</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-table">
+      <cc-main-table></cc-main-table>
+    </div>
+  </div>
+</div>

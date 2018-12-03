@@ -1,0 +1,31 @@
+.run-rate-container {
+  min-width: calc(1283px - 760px);
+  max-width: calc(1440px - 760px);
+  height: 280px;
+  border-radius: 6px;
+  .title {
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    padding: 0 18px;
+    width: calc(88%);
+    margin: auto;
+    position: relative;
+    top: -12px;
+    box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 0 2px rgba(10,16,20,.12);
+    background: linear-gradient(to left,#5f9ce2,#0B69D8);
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    span {
+      float: right;
+      font-size: 12px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  .value {
+    height: 238px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../theme";
+
+.navbar-container {
+  height: 56px;
+  width: calc(100vw - 68px);
+  margin-left: 2px;
+  background-color: #ebeff5;
+  border-bottom: 1px solid #44A9E2;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  display: flex;
+  .select-container {
+    margin-left: 20px;
+    .mat-form-field {
+      height: 56px;
+      padding-top: 4px;
+    }
+  }
+  .empty {
+    flex-grow: 1;
+  }
+  .info-container {
+    height: 56px;
+    margin-right: 40px;
+    .name-container {
+      height: 32px;
+      line-height: 32px;
+      display: flex;
+      .title {
+        color: #dddddd;
+        font-size: 12px;
+      }
+      .value {
+        color: #333333;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 16px;
+      }
+    }
+    .logout-container {
+      font-size: 14px;
+      color: $primary-color;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      .fontIcon {
+        width: 30px;
+        text-align: center;
+      }
+    }
+  }
+}

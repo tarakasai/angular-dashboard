@@ -1,0 +1,14 @@
+<div class="error-container">
+  <div class="signal-container">
+    <plotly-plot
+      [data]="allGraphs.signalGraph.data"
+      [layout]="allGraphs.signalGraph.layout"
+      [style]="{width: '100%', height: '100%', borderRadius: '4px'}"></plotly-plot>
+  </div>
+  <div class="decision-container">
+    <plotly-plot
+      [data]="allGraphs.decisionGraph.data"
+      [layout]="allGraphs.decisionGraph.layout"
+      [style]="{width: '100%', height: '100%', borderRadius: '4px'}"></plotly-plot>
+  </div>
+</div>

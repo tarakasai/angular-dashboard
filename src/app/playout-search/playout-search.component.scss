@@ -1,0 +1,91 @@
+@import '../../../src/theme';
+
+.playout-search-container {
+  display: flex;
+  .main-container {
+    width: calc(100vw - 64px);
+    position: relative;
+    left: 64px;
+    .add-title {
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title-container {
+        .main {
+          font-size: 20px;
+          color: $main-color;
+          font-weight: 400;
+        }
+        .last-updated {
+          font-size: 12px;
+          font-weight: 300;
+          color: #555;
+          margin: 10px 0 4px 0;
+          span {
+            font-weight: 500;
+            font-size: 14px;
+            color: #333;
+            margin-left: 6px;
+          }
+        }
+        .air-date {
+          margin-top: 4px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #555;
+          span {
+            font-size: 12px;
+            font-weight: 300;
+            color: #555;
+            margin: 10px 0 4px 0;
+            .date {
+              font-weight: 500;
+              font-size: 14px;
+              color: #333;
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+    }
+    .main-table {
+      margin: 15px;
+      height: calc(100vh - 206px);
+      overflow-y: scroll;
+      padding: 15px;
+    }
+    .selector-container {
+      margin: 20px;
+      //background: #f4f4f4;
+      border-radius: 6px;
+      display: flex;
+      height: 72px;
+      align-items: center;
+      padding: 0 18px;
+      .mat-form-field {
+        bottom: -10px;
+      }
+      .air-select,.market-select,.syscode-select,.network-select {
+        width: 160px;
+        margin-right: 12px;
+      }
+      .flex-grow {
+        flex-grow: 1;
+      }
+      .search-button,.export-button {
+        margin-right: 10px;
+        button {
+          background: $main-secondary-color;
+          color: white;
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .playout-display-container {
+      margin: 20px;
+    }
+  }
+}

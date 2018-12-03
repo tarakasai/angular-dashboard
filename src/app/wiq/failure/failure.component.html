@@ -1,0 +1,74 @@
+<div class="search-container">
+  <div class="fontIcon">
+    <fa-icon [icon]="faSearch"></fa-icon>
+  </div>
+  <input type="text" (keyup)="applyFilter($event.target.value)" placeholder="Search for corresponding failure rate" >
+</div>
+
+<div class="mat-elevation-z8" *ngIf="!failureTableData.loading">
+  <table mat-table [dataSource]="dataSource" matSort>
+
+    <!-- Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-checkbox (change)="$event ? masterToggle() : null"
+                      [checked]="selection.hasValue() && isAllSelected()"
+                      [indeterminate]="selection.hasValue() && !isAllSelected()">
+        </mat-checkbox>
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox (click)="$event.stopPropagation()"
+                      [disableRipple]="disableRippleBool"
+                      (change)="$event ? selection.toggle(row) : null"
+                      [checked]="selection.isSelected(row)">
+        </mat-checkbox>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="market">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Market </th>
+      <td mat-cell *matCellDef="let element">{{element['market']}}</td>
+    </ng-container>
+    <ng-container matColumnDef="zone">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Zone </th>
+      <td mat-cell *matCellDef="let element">{{element['zone']}}</td>
+    </ng-container>
+    <ng-container matColumnDef="network">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Metwork </th>
+      <td mat-cell *matCellDef="let element">{{element['network']}}</td>
+    </ng-container>
+    <ng-container matColumnDef="total">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Total Success </th>
+      <td mat-cell *matCellDef="let element">{{element['total']['percentage']}}% ({{element['total']['count']}})</td>
+    </ng-container>
+    <ng-container matColumnDef="no_psn">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> No PSN </th>
+      <td mat-cell *matCellDef="let element">{{element['no_psn']['percentage']}}% ({{element['no_psn']['count']}})</td>
+    </ng-container>
+    <ng-container matColumnDef="null_asset">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Null Asset </th>
+      <td mat-cell *matCellDef="let element">{{element['null_asset']['percentage']}}% ({{element['null_asset']['count']}})</td>
+    </ng-container>
+    <ng-container matColumnDef="mismatch_asset">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Mismatch Asset </th>
+      <td mat-cell *matCellDef="let element">{{element['mismatch_asset']['percentage']}}% ({{element['mismatch_asset']['count']}})</td>
+    </ng-container>
+    <ng-container matColumnDef="no_start_psn">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> No Start PSN </th>
+      <td mat-cell *matCellDef="let element">{{element['no_start_psn']['percentage']}}% ({{element['no_start_psn']['count']}})</td>
+    </ng-container>
+    <ng-container matColumnDef="no_end_psn">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> No End PSN </th>
+      <td mat-cell *matCellDef="let element">{{element['no_end_psn']['percentage']}}% ({{element['no_end_psn']['count']}})</td>
+    </ng-container>
+    <ng-container matColumnDef="playtime_error">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Playtime Error </th>
+      <td mat-cell *matCellDef="let element">{{element['playtime_error']['percentage']}}% ({{element['playtime_error']['count']}})</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+        (click)="selection.toggle(row)">
+    </tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+</div>

@@ -1,0 +1,48 @@
+<div class="table-message">
+  *Click on row to know more details
+</div>
+
+<div class="search-container">
+  <div class="fontIcon">
+    <fa-icon [icon]="faSearch"></fa-icon>
+  </div>
+  <input type="text" (keyup)="applyFilter($event.target.value)" placeholder="Search for corresponding date">
+</div>
+
+<div class="main-table-loader" *ngIf="mainTableData.loading">
+  <cc-loader></cc-loader>
+</div>
+
+<div class="mat-elevation-z8" *ngIf="!mainTableData.loading">
+  <table mat-table [dataSource]="dataSource" matSort multiTemplateDataRows>
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of displayedColumns">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{tableHeaders[column]}}</th>
+      <td mat-cell *matCellDef="let element">
+        <ng-template [ngIf]="!tableColors.includes(element[column])">{{element[column]}}</ng-template>
+        <ng-template [ngIf]="tableColors.includes(element[column])">
+          <fa-icon [icon]="faCheckCircle"
+                   [ngStyle]="{'font-size.px': 20,
+                               'color': element[column],
+                               'margin-left.px': 20}"></fa-icon>
+        </ng-template>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="expandedDetail">
+      <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumns.length">
+        <div class="example-element-detail"
+             [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+          <cc-sub-table [subTableData]="subTableData"></cc-sub-table>
+        </div>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let element; columns: displayedColumns;"
+        class="example-element-row"
+        [class.example-expanded-row]="expandedElement === element"
+        (click)="expandedElement === element? expandedElement = null : expandedElement = element">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</div>

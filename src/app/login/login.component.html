@@ -1,0 +1,54 @@
+<div class="login-container">
+  <div class="login-box mat-elevation-z8">
+    <div class="image-container">
+      <img src="../../assets/images/login/login2.jpg" alt="loginImg">
+    </div>
+    <div class="details-container">
+      <div class="details-image-container">
+        <img src="../../assets/images/login/login1.jpg" alt="loginImg">
+      </div>
+      <div class="login-header">
+        Login to your account
+      </div>
+      <form action="" class="login-form">
+        <div [ngClass]="{'serverError': loginDetails.serverError, 'server-error-container': true}">
+          {{loginDetails.loginFailMessage}}
+        </div>
+        <div class="username-container">
+          <mat-form-field class="example-full-width" floatLabel="always">
+            <mat-label>Username</mat-label>
+            <input matInput
+                   autocomplete="off"
+                   placeholder="Enter Username"
+                   [(ngModel)]="loginDetails.username.value"
+                   name="username" (ngModelChange)="loginInputChanged($event,'username')">
+          </mat-form-field>
+          <div class="username-error-container" *ngIf="loginDetails.username.error">
+            Username is required
+          </div>
+        </div>
+        <div class="password-container">
+          <mat-form-field class="example-full-width" floatLabel="always">
+            <mat-label>Password</mat-label>
+            <input matInput
+                   placeholder="Enter Password"
+                   type="password"
+                   [(ngModel)]="loginDetails.password.value"
+                   name="password" (ngModelChange)="loginInputChanged($event,'password')">
+          </mat-form-field>
+          <div class="password-error-container" *ngIf="loginDetails.password.error">
+            Password is required
+          </div>
+        </div>
+        <div class="submit-container">
+          <button mat-raised-button (click)="submitLoginDetails()">
+            <span *ngIf="!loginDetails.loading">Login</span>
+            <span *ngIf="loginDetails.loading">
+              <mat-spinner [diameter]="20" ></mat-spinner>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

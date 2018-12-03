@@ -1,0 +1,88 @@
+@import '../../../theme';
+
+.sm-table-container {
+  margin: 0 12px 12px 12px;
+  height: 100%;
+  .table-container {
+    margin: 20px 0 10px 0;
+    height: calc(100% - 74px);
+    .table-header {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $main-color;
+      .stream {
+        width: 10%;
+        height: 20px;
+        line-height: 20px;
+      }
+      .signal-health {
+        width: 90%;
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+    .table-body {
+      height: calc(100% - 40px);
+      overflow-y: scroll;
+      .each-row {
+        padding: 10px;
+        background: #f4f4f4;
+        margin-bottom: 4px;
+        overflow: hidden;
+        border-radius: 6px;
+        .stream-signal-health {
+          display: flex;
+          .stream-body {
+            width: 10%;
+            .stream-name {
+              font-size: 10px;
+              font-weight: 400;
+              height: 20px;
+              line-height: 20px;
+            }
+            .data-center-1,.data-center-2 {
+              font-size: 12px;
+              font-weight: 300;
+              height: 20px;
+              line-height: 20px;
+            }
+          }
+          .signal-health-body {
+            width: 90%;
+            display: flex;
+            overflow-x: scroll;
+            .each-sm-body {
+              margin-right: 16px;
+              width: 42px;
+              text-align: center;
+              .time-stamps {
+                font-size: 10px;
+                font-weight: 300;
+                height: 20px;
+                line-height: 20px;
+              }
+              .data-center-1-data,.data-center-2-data {
+                height: 20px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+        .total-breaks {
+          text-align: right;
+          margin: 6px 20px 0 0;
+          font-size: 12px;
+          span {
+            font-size: 14px;
+            color: $main-secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

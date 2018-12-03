@@ -1,0 +1,10 @@
+.error-container {
+  display: flex;
+  overflow-y: hidden;
+  .signal-container {
+    width: 50%;
+  }
+  .decision-container {
+    width:  50%;
+  }
+}

@@ -1,0 +1,86 @@
+@import '../../../src/theme';
+
+.dashboard-container {
+  display: flex;
+  .main-container {
+    width: calc(100vw - 64px);
+    position: relative;
+    left: 64px;
+    .dashboard-main-container {
+      .title-container {
+        margin: 20px 40px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $forth-color;
+        span {
+          font-size: 12px;
+          margin-left: 6px;
+          color: $secondary-color;
+        }
+      }
+      height: calc(100vh - 56px);
+      overflow-y: scroll;
+      .all-containers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .each-container {
+          margin-bottom: 30px;
+        }
+      }
+      .schedule-run-rate {
+        margin: 30px 20px;
+        display: flex;
+      }
+      .health-issues-container {
+        margin: 20px 20px;
+        display: flex;
+        .issues-container {
+          width: calc(100% - 260px);
+          height: 280px;
+          border-radius: 4px;
+          box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+          .title {
+            height: 40px;
+            line-height: 40px;
+            color: $primary-color;
+            font-weight: 500;
+            padding: 0 18px;
+            background: #f4f4f4;
+          }
+          .value {
+            height: 240px;
+            overflow-y: scroll;
+            .each-value {
+              display: flex;
+              margin: 10px 12px;
+              justify-content: space-between;
+              padding: 6px 16px;
+              background: #eee;
+              border-radius: 4px;
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .unbound-decision-failure {
+      margin: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      .unbound-break,.no-decision,.failure-rate {
+        width: calc(32%);
+      }
+    }
+    .signal-decision-content {
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      .signal-container,.decision-container,.content-container {
+        width: 32%;
+        //background: #eeeeee;
+      }
+    }
+  }
+}
